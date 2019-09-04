@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piskel-clone</title>
+    <!--<link rel="stylesheet" href="palette.css">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card" id="tools">
+                    <div class="card-body">
+                        <div class="btn-group-vertical" id="tools-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="palette card" id="pallete">
+                    <div class="card-body">
+                        <div class="btn-group-vertical" id="pallette-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="canvas-container">
+            </div>
+            <div class="col-md-2" id="frames-container">
+
+            </div>
+            <div class="col-md-2">
+                <canvas id="preview" width="256" height="256"></canvas>
+                <input type="range" id="speed" value="1" min="1" max="24">
+                <button class="btn btn-light-blue form-check-label" id="play">Play</button>
+                <button class="btn btn-light-blue form-check-label" id="fullscreen">Fullscreen</button>
+
+                <br>
+                <button class="btn btn-light-blue form-check-label" id="save">Save</button>
+                <button class="btn btn-light-blue form-check-label" id="load">Load</button>
+                <button class="btn btn-light-blue form-check-label" id="export">Export</button>
+                <button class="btn btn-light-blue form-check-label" id="settings-button">Settings</button>
+            </div>
+        </div>
+    </div>
+    <div id="settings-container"></div>
+</body>
+
+</html>
